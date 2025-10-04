@@ -22,6 +22,6 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    Route::resources('services',ServiceController::class);
+    Route::resource('services',ServiceController::class);
 
 });
